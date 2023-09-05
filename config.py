@@ -133,7 +133,6 @@ keys = [
     # spawn apps
     Key([mod], "u", lazy.spawn("brave")),
     Key([mod], "o", lazy.spawn("spotify")),
-    Key([mod], "p", lazy.spawn("obsidian")),
 
     # screenshot
     Key([mod, "shift"], "s", lazy.spawn("flameshot gui")),
@@ -228,13 +227,19 @@ screens = [
                 #widget.CurrentLayout(),
                 widget.GroupBox(
                     fontsize = 20,
-                    active = "#bf616a",
-                    inactive = "#5e81ac",
-                    highlight_method = "text",
-                    this_current_screen_border = "#ebcb8b",
+                    highlight_color = "#2e3440",
+                    active = "#81a1c1",
+                    inactive = "#4a698f",
+                    highlight_method = "line",
+                    this_current_screen_border = "#D08770",
+                    other_screen_border = "#BF616A",
                     ),
-                widget.Prompt(),
-                widget.WindowName(),
+                widget.Prompt(
+                    foreground="#5c6880",
+                    ),
+                widget.WindowName(
+                    foreground="#5c6880",
+                    ),
                 widget.Chord(
                     chords_colors={
                         "launch": ("#ff0000", "#ffffff"),
