@@ -231,8 +231,8 @@ screens = [
                     active = "#81a1c1",
                     inactive = "#4a698f",
                     highlight_method = "line",
-                    this_current_screen_border = "#D08770",
-                    other_screen_border = "#BF616A",
+                    this_current_screen_border = "#BF616A",
+                    other_screen_border = "#4c566a",
                     ),
                 widget.Prompt(
                     foreground="#5c6880",
