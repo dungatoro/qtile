@@ -189,8 +189,8 @@ for i in groups:
 def init_layout_theme():
     return {"margin":20,
             "border_width":6,
-            "border_focus": "#8fbcbb",
-            "border_normal": "#4c566a"
+            "border_focus": "#8ccf7e",
+            "border_normal": "#232a2d"
             }
 
 layout_theme = init_layout_theme()
@@ -215,8 +215,8 @@ widget_defaults = dict(
     font="cartograph CF",
     fontsize=16,
     padding=4,
-    background="#2e3440",
-    foreground="#D8DEE9",
+    background="#141b1e",
+    foreground="#dadada",
 )
 extension_defaults = widget_defaults.copy()
 
@@ -227,18 +227,18 @@ screens = [
                 #widget.CurrentLayout(),
                 widget.GroupBox(
                     fontsize = 20,
-                    highlight_color = "#2e3440",
-                    active = "#81a1c1",
-                    inactive = "#4a698f",
+                    highlight_color = "#141b1e",
+                    active = "#e57474",
+                    inactive = "#424c50",
                     highlight_method = "line",
-                    this_current_screen_border = "#BF616A",
-                    other_screen_border = "#4c566a",
+                    this_current_screen_border = "#e57474",
+                    other_screen_border = "#232a2d",
                     ),
                 widget.Prompt(
-                    foreground="#5c6880",
+                    foreground="#424c50",
                     ),
                 widget.WindowName(
-                    foreground="#5c6880",
+                    foreground="#424c50",
                     ),
                 widget.Chord(
                     chords_colors={
@@ -249,10 +249,6 @@ screens = [
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
                 widget.Clock(format="%a %d/%m %H:%M"),
-                widget.CurrentLayoutIcon(
-                    padding = 0,
-                    scale = 0.7,
-                    ),
             ],
             40,
             # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
@@ -284,8 +280,8 @@ floating_layout = layout.Floating(
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
     ],
-    border_focus = "#8fbcbb",
-    border_normal = "#4c566a",
+    border_focus = "#8ccf7e",
+    border_normal = "#232a2d",
     border_width = 6,
 )
 auto_fullscreen = True
