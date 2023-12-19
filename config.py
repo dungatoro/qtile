@@ -281,8 +281,8 @@ floating_layout = layout.Floating(
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
     ],
-    border_focus = "#8ccf7e",
-    border_normal = "#232a2d",
+    border_focus = "#ea9d34",
+    border_normal = "#fafafa",
     border_width = 6,
 )
 auto_fullscreen = True
