@@ -132,6 +132,7 @@ keys = [
 
     # spawn apps
     Key([mod], "u", lazy.spawn("brave")),
+    Key([mod], "i", lazy.spawn("emacsclient -c -a 'emacs'")),
     Key([mod], "o", lazy.spawn("spotify")),
 
     # screenshot
