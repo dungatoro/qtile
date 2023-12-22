@@ -190,8 +190,8 @@ for i in groups:
 def init_layout_theme():
     return {"margin":20,
             "border_width":6,
-            "border_focus": "#ea9d34",
-            "border_normal": "#fafafa"
+            "border_focus": "#e06c75",
+            "border_normal": "#282c34"
             }
 
 layout_theme = init_layout_theme()
@@ -216,8 +216,8 @@ widget_defaults = dict(
     font="cartograph CF",
     fontsize=16,
     padding=4,
-    background="#ffffff",
-    foreground="#9893a5",
+    background="#1e2227",
+    foreground="#abb2bf",
 )
 extension_defaults = widget_defaults.copy()
 
@@ -228,12 +228,12 @@ screens = [
                 #widget.CurrentLayout(),
                 widget.GroupBox(
                     fontsize = 20,
-                    highlight_color = "#ffffff",
-                    active = "#000000",
-                    inactive = "#9893a5",
+                    highlight_color = "#1e2227",
+                    active = "#abb2bf",
+                    inactive = "#323842",
                     highlight_method = "line",
-                    this_current_screen_border = "#ea9d34",
-                    other_screen_border = "#ea9a97",
+                    this_current_screen_border = "#e06c75",
+                    other_screen_border = "#323842",
                     ),
                 widget.Prompt(
                     foreground="#9893a5",
