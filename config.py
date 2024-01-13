@@ -187,10 +187,10 @@ for i in groups:
     )
 
 def init_layout_theme():
-    return {"margin":20,
+    return {"margin":10,
             "border_width":6,
-            "border_focus": "#e06c75",
-            "border_normal": "#282c34"
+            "border_focus": "#31353f",
+            "border_normal": "#31353f"
             }
 
 layout_theme = init_layout_theme()
@@ -212,8 +212,8 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="cartograph CF",
-    fontsize=16,
+    font="Cartograph Mono CF",
+    fontsize=18,
     padding=4,
     background="#1e2227",
     foreground="#323842",
@@ -274,8 +274,8 @@ floating_layout = layout.Floating(
         Match(title="branchdialog"),  # gitk
         Match(title="pinentry"),  # GPG key password entry
     ],
-    border_focus = "#e06c75",
-    border_normal= "#282c34",
+    border_focus = "#31353f",
+    border_normal= "#31353f",
     border_width = 6,
 )
 auto_fullscreen = True
