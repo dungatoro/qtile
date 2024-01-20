@@ -212,7 +212,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="Cartograph Mono CF",
+    font="CartographCF Nerd Font",
     fontsize=18,
     padding=4,
     background="#1e2227",
